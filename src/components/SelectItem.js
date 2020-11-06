@@ -5,7 +5,6 @@ export default function SelectItem() {
   const dispatch = useDispatch();
 
   function selectItem(item) {
-    console.log(item);
     dispatch({ type: "ITEM_SELECTED", item });
   }
 
