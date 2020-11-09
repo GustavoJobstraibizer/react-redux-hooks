@@ -10,7 +10,7 @@ function App() {
   return (
     <Provider store={store}>
       <div className="App">
-        <Header />
+        <Header title="Teste header PropType - " />
         <CourseList />
         <Product />
         <SelectItem />

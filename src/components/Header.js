@@ -1,8 +1,9 @@
+import PropTypes from "prop-types";
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import getTodo from "../store/actions/todo";
 
-export default function Header() {
+export default function Header({ title }) {
   const dispatch = useDispatch();
   const todo = useSelector(({ todo }) => todo);
 
@@ -19,10 +20,14 @@ export default function Header() {
   return (
     <>
       <button type="button" onClick={() => dispatch(handleGetTodo())}>
-        Get Todo
+        {title} Get Todo
       </button>
 
       <strong>{todo.title}</strong>
     </>
   );
 }
+
+Header.propTypes = {
+  title: PropTypes.string,
+};
