@@ -6,4 +6,6 @@ const setTodo = (todo) => ({ type: types.SET_TODO, todo });
 
 const loadingTodo = () => ({ type: types.LOADING_TODO });
 
-export { getTodo, setTodo, loadingTodo };
+const sortTodo = (field) => ({ type: types.SORT_BY, field });
+
+export { getTodo, setTodo, loadingTodo, sortTodo };

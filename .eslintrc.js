@@ -28,5 +28,6 @@ module.exports = {
     'object-curly-newline': 0,
     'no-debugger': 0,
     'no-confusing-arrow': 0,
+    'prefer-const': 0,
   },
 };
