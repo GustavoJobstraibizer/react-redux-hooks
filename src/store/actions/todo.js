@@ -1,7 +1,9 @@
 import types from './types/todoTypes';
 
-const getTodo = () => ({ type: types.GET_TODO });
+const getTodo = (id) => ({ type: types.GET_TODO, id });
 
 const setTodo = (todo) => ({ type: types.SET_TODO, todo });
 
-export { getTodo, setTodo };
+const loadingTodo = () => ({ type: types.LOADING_TODO });
+
+export { getTodo, setTodo, loadingTodo };
