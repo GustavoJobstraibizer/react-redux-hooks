@@ -4,7 +4,7 @@ const INITIAL_STATE = {
 
 export default function actions(state = INITIAL_STATE, action) {
   switch (action.type) {
-    case "EDITING":
+    case 'EDITING':
       return { ...state, isEditing: action.isEditing };
     default:
       return state;

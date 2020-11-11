@@ -35,7 +35,6 @@ export default function CourseList() {
 
   function handleCancel() {
     setEditing(false);
-    inputCourse.current.value = '';
   }
 
   return (

@@ -1,0 +1,5 @@
+export default {
+  REMOVE_COURSE: 'REMOVE_COURSE',
+  ADD_COURSE: 'ADD_COURSE',
+  EDIT_COURSE: 'EDIT_COURSE',
+};
